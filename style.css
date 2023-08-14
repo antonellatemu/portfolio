@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Space+Grotesk:wght@300&display=swap');
+body{
+    background: #d9a7c7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+font-family:'Space Grotesk', sans-serif;
+}
+a{
+ text-decoration: none;
+}
+nav{
+    border: 2px outset rgb(216, 112, 164);
+    padding: 20px;
+    margin-top: 2%;
+    border-radius: 8px
+}
+nav .opciones,h1{
+    display: inline;
+}
+.opciones{
+    margin-left: 50%;
+}
+.opciones a{
+    border: 2px outset rgb(216, 112, 164);
+    padding: 5px;
+    border-radius: 10px;
+ }
+ nav {
+    transition: color 1.0s ease-in-out;
+    background: linear-gradient(to bottom, rgb(238, 227, 236), #eccae7);
+  }
+  
+  nav:hover {
+    color: #d454b9; 
+  }
+  nav{
+    animation: bounce 2.5s ease infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  h1 {
+    position: relative;
+  }
+  
+  h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Ajusta la distancia del subrayado */
+    width: 0;
+    height: 2px; /* Grosor del subrayado */
+    background-color: rgb(194, 121, 178);
+    transition: width 0.3s ease; /* Agrega una transición suave */
+  }
+  
+  h1:hover::after {
+    width: 100%; /* Anima el crecimiento del subrayado al pasar el ratón */
+  }
+  
+  
+ 
+  
